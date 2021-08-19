@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= htmlWebpackPlugin.options.title %></title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    <script src="style/loader.css"></script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+          background: #242526;
+      }
+      .navbar {
+          height: 10vh;
+           border-bottom: 0.3px solid rgba(204, 23, 129, 0.397);
+      }
+      .nav-link {
+          color: #c3cfda;
+      }
+      .nav-link:hover {
+          color:  white;
+      }
+      .nav-button{
+          display: inline-flex;
+          background: #3d3f41;
+          border: none;
+          border-radius: 20px;
+          margin-right: 6px;
+      }
+      .connect-button{
+          background: #3d3f41;
+          border-radius: 8px;
+      }
+      .top-bar{
+          height: 20%;
+          background: hsl(225, 20%, 4%);
+          border-top-left-radius: 10px;
+          border-top-right-radius: 10px;
+          position: relative;
+
+      }
+      .top-title{
+          position: absolute;
+          top: 30px;
+          left: 30px;
+          color: rgb(219, 215, 215);
+      }
+      .top-buttons{
+          position: absolute;
+          top: 30px;
+          right: 30px;
+      }
+      .search-button{
+          background: #15191d;
+          border-radius: 8px;
+          display: inline-flex;
+          padding: 40px;
+      }
+      .search-button:active{
+          border: 2px solid blue;
+
+      }
+      .search{
+          position: absolute;
+          top : 90px;
+      }
+      .buttom-container{
+          height: 80%;
+          background: hsl(223, 16%, 17%);
+      }
+  </style>
+  </head>
+  <body>
+    <noscript>
+      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app">
+    </div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
